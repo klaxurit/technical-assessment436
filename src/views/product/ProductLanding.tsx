@@ -1,11 +1,9 @@
 import { Box, Typography, Card, CardContent } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import SecurityIcon from '@mui/icons-material/Security';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 
 export const ProductLanding = () => {
-  const theme = useTheme();
 
   return (
     <Box sx={{ overflowX: "hidden", width: "100%" }}>
@@ -239,7 +237,6 @@ export const ProductLanding = () => {
           </Typography>
         </Box>
       </Box>
-
     </Box>
   );
 };
