@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import { Navigate } from "react-router-dom";
 import Loadable from "../components/loadable/Loadable";
+import { ProductLanding } from "../views/product/ProductLanding";
 
 const Layout = Loadable(lazy(() => import("../components/layout/Layout")));
 const Dashboard = Loadable(lazy(() => import("../views/dashboard/Dashboard")));
@@ -11,6 +12,10 @@ const Notfound = Loadable(
 );
 
 const Router = [
+  {
+    path: "/product",
+    element: <ProductLanding />
+  },
   {
     path: "/",
     element: <Layout />,
